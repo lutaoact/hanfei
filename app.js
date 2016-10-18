@@ -8,11 +8,12 @@ const fs = require('fs');
 const _u = require('./common/util');
 const weixin = require('./common/weixin');
 
-const accessLog = fs.createWriteStream('./logs/morgan.access.log');
+const accessLog = fs.createWriteStream('../logs/morgan.access.log');
 app.use(morgan('short', {stream: accessLog}));
 app.use(morgan('dev'));
 
 app.get('/', function(req, res) {
+  console.log(req.headers);
   weixin.getAccessToken((err, token) => {
     if (err) {
       return res.status(500).send('err occured');

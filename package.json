@@ -1,0 +1,44 @@
+{
+  "name": "hanfei",
+  "version": "0.0.1",
+  "description": "weixin token control server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lutaoact/hanfei.git"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "framework"
+  ],
+  "author": "Lu Tao",
+  "license": "MIT",
+  "homepage": "https://github.com/lutaoact/hanfei#readme",
+  "dependencies": {
+    "async": "1.5.2",
+    "config": "1.19.0",
+    "csv": "0.4.6",
+    "express": "4.13.4",
+    "gulp-run": "1.6.12",
+    "lodash": "4.13.1",
+    "log4js": "0.6.31",
+    "moment": "2.14.1",
+    "morgan": "1.6.1",
+    "redis": "2.4.2",
+    "request": "2.69.0",
+    "sprintf-js": "1.0.3"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.1",
+    "canvas": "^1.4.0",
+    "gulp": "3.9.0",
+    "gulp-load-plugins": "1.2.0",
+    "gulp-nodemon": "2.0.6",
+    "mocha": "2.4.5",
+    "wechat": "^2.0.3"
+  }
+}
